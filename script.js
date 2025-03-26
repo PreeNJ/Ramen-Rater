@@ -1,12 +1,12 @@
-// Run main() after the DOM is fully loaded
+
 document.addEventListener('DOMContentLoaded', main);
 
 function main() {
-  displayRamens();       // Fetch and display existing ramen images
-  addSubmitListener();   // Set up the form to add a new ramen
+  displayRamens();   
+  addSubmitListener();   
 }
 
-// 1) Fetch all ramen from the server and display their images in #ramen-menu
+
 function displayRamens() {
   fetch('http://localhost:3000/ramens')
     .then(response => response.json())
@@ -17,9 +17,7 @@ function displayRamens() {
     })
     .catch(error => console.error('Error fetching ramens:', error));
 }
-
-// 2) Create an <img> for each ramen and append it to #ramen-menu
-//    Also add a click event so clicking the image shows its details.
+ 
 function renderRamenImage(ramen) {
   const ramenMenu = document.getElementById('ramen-menu');
 
