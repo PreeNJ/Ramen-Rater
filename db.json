@@ -1,0 +1,14 @@
+{
+    "ramens": [
+      {
+        "id": 1,
+        "name": "Tonkotsu Ramen",
+        "restaurant": "Ichiran",
+        "image": "https://example.com/tonkotsu.jpg",
+        "rating": 9,
+        "comment": "Delicious!"
+      },
+      ...
+    ]
+  }
+  
